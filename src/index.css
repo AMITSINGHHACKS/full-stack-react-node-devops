@@ -1,3 +1,63 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    background-color: #040015;
+}
+
+#Solarplanet{
+height: 920px;
+
+
+z-index: -2;
+position: absolute;
+transform: translate(-50%,-50%);
+top: 20%;
+left: 50%;
+right: 0%;
+
+}
+
+@media screen and (max-width: 510px) {
+    #Solarplanet{
+        scale: 2;
+        position: absolute;
+transform: translate(-50%,-50%);
+      
+    top: 90%;
+ 
+       left: 50%;
+
+    }
+    
+}
+
+.bottom img{
+    margin: auto;
+    height: 450px;
+}
+
+.bottom{
+    overflow: hidden;
+    z-index: -10;
+    
+}
+
+.copyright{
+    padding: 10px;
+width: 420px;
+margin: auto;
+margin-bottom: 20px;
+height: 70px;
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 12px;
+backdrop-filter: blur(20px);
+}
+
+/* .copyright{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 130%;
+} */

@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Register from "./pages/Register";
 import { useState,useEffect } from "react";
 import { useCookies } from "react-cookie";
+import NavMain from "./components/NavMain";
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
   if (cookie['token']){
     if ((cookie.token).length>7){
       setAuthstate(cookie.token)
-      const login=await fetch('http://localhost:5000/verifytoken',{
+      const login=await fetch('https://devbackend-xsjo.onrender.com/verifytoken',{
         method:"POST",
         headers:{
           'Content-Type':'application/json'
@@ -47,13 +48,13 @@ function App() {
   
 
   return (<>
-  
-{/* {!userdata && <Navbar username="guest"/>} */}
-{userdata && <Navbar username={userdata.username} authstate={authstate}/>}
+ 
+  {userdata && <NavMain username={userdata.username} authstate={authstate}/>}
+
 
   <Router>
     <Routes>
-      <Route path="/" element={<Home userdata={userdata} post={post}/>}></Route>
+      <Route path="/" element={<Home userdata={userdata} post={post} authstate={authstate}/>}></Route>
       
       <Route path="/login" element={<Login/>}></Route>
       <Route path="/register" element={<Register/>}></Route>
