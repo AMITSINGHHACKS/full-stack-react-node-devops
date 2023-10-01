@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from "react-router-dom";
+import Solar from '../public/images/solar.webm'
 export default function Register() {
     const [username,setUsername]=useState('')
     const [password,setPassword]=useState('')
@@ -53,6 +54,13 @@ const triggerRegsiter=async(e)=>{
   return (
     <>
    <center>
+         
+   <video  autoPlay muted loop id='Solarplanet'>
+     <source src={Solar} />
+ </video>
+ <br></br>
+ <br></br>
+ <br></br>
    {failState &&  <div id="toast-danger" class="mt-10 flex items-center w-full max-w-xs p-4 mb-4 text-gray-500 bg-white rounded-lg shadow " role="alert">
     <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-red-500 bg-red-100 rounded-lg ">
         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
