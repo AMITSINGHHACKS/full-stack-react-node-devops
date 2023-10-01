@@ -38,7 +38,7 @@ window.location.reload()
 
     const TriggerForPost=async(e)=>{
 e.preventDefault();
-const sendpost=await fetch("http://localhost:5000/post",{
+const sendpost=await fetch("https://devbackend-xsjo.onrender.com/post",{
     method:"POST",
     headers:{
       'Content-Type':'application/json'
