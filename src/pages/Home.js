@@ -20,6 +20,9 @@ export default function Home(props) {
 
     console.log(props.authstate)
   }
+  else{
+    navigate("/login")
+  }
  
   
  },[])
