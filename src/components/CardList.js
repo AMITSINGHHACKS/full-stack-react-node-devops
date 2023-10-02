@@ -62,18 +62,18 @@ setPostvalue('')
      <a href='/login'>
      <h1 className='text-white text-left text-2xl  font-extrabold'>Login to View</h1>
       <br></br>
-      <div><div className=" h-28 w-28 bg-white  animate-pulse bg-opacity-5 rounded-full">  </div>
+      <div><div className=" h-28 w-28 bg-white  animate-pulse bg-opacity-10 rounded-full">  </div>
           <br></br>
-              <div className="h-10 w-48 bg-white  animate-pulse bg-opacity-5 rounded"></div>
+              <div className="h-10 w-48 bg-white  animate-pulse bg-opacity-10 rounded"></div>
           </div>
           <br></br>
           
-          <div className=" h-4 w-56 bg-white  animate-pulse  bg-opacity-5 rounded"></div>
+          <div className=" h-4 w-56 bg-white  animate-pulse  bg-opacity-10 rounded"></div>
          
           
           
           
-          <div className="mt-2  h-14 w-2/3 bg-white  animate-pulse bg-opacity-5 rounded"></div>
+          <div className="mt-2  h-14 w-2/3 bg-white  animate-pulse bg-opacity-10 rounded"></div>
      </a>
       </>
     
