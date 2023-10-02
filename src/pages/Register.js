@@ -91,27 +91,32 @@ const triggerRegsiter=async(e)=>{
         </svg>
     </button>
 </div>}
+   <div className='mt-10 pt-10'> 
    <form onSubmit={triggerRegsiter}>
-<input type='text' required className='block  mt-10 w-full max-w-xs p-4 text-gray-900 border border-gray-300 rounded-lg bg-white sm:text-md focus:ring-blue-500 focus:border-blue-500 ' value={username} onChange={(e)=>{setUsername(e.target.value)}} placeholder='enter your username'>
-    
-</input>
-<br></br>
-<input type='password' required className='block w-full max-w-xs p-4 text-gray-900 border border-gray-300 rounded-lg bg-white sm:text-md focus:ring-blue-500 focus:border-blue-500 ' value={password} onChange={(e)=>{setPassword(e.target.value)}} placeholder='enter your password'>
-    
-</input>
-<br></br>
-<input type='password' required className='block w-full max-w-xs p-4 text-gray-900 border border-gray-300 rounded-lg bg-white sm:text-md focus:ring-blue-500 focus:border-blue-500 ' value={passwordcheck} onChange={(e)=>{setPasswordcheck(e.target.value)}} placeholder='Confirm password'>
-    
-</input>
-<br></br><br></br>
-
-{!passwordstate && <button className='bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow' type='submit'>Register</button>}
-{passwordstate && <button disabled className='bg-red-500  hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow' type='submit'>Register</button>}
-
-    </form>
-<p>
-    have an account?
-<a href='/login' className=' text-blue-700'>Login here!</a></p>
+   
+   <input type='text' required className=' block  mt-10 w-full max-w-xs p-4 text-white border border-none  border-gray-300 rounded-lg bg-white sm:text-md bg-opacity-10 focus:ring-blue-500 focus:border-blue-500 ' value={username} onChange={(e)=>{setUsername(e.target.value)}} placeholder='enter your username'>
+       
+   </input>
+   <br></br>
+   <input type='password' required className='block w-full max-w-xs p-4 text-white border border-none  border-gray-300 rounded-lg bg-white sm:text-md bg-opacity-10 focus:ring-blue-500 focus:border-blue-500 ' value={password} onChange={(e)=>{setPassword(e.target.value)}} placeholder='enter your password'>
+       
+   </input>
+   <br></br>
+   <input type='password' required className='block w-full max-w-xs p-4 text-white border-none  border-gray-300 rounded-lg bg-white sm:text-md bg-opacity-10 focus:ring-blue-500 focus:border-blue-500 ' value={passwordcheck} onChange={(e)=>{setPasswordcheck(e.target.value)}} placeholder='Confirm password'>
+       
+   </input>
+   <br></br><br></br>
+   
+   {<button className='bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow' type='submit'>Register</button>}
+   
+   
+       </form>
+   </div>
+    <p className='text-white mt-8'>
+    <span className='h-10 w-1/ p-3 rounded-xl'>
+    Have an account? </span>
+    <span className='ml-1 h-10 w-1/ bg-white bg-opacity-10 p-3 rounded-xl'>
+<a href='/login' className='mx-4 text-blue-300'>Login!</a></span></p>
    </center>
     </>
   )

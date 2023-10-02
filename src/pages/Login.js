@@ -108,9 +108,9 @@ export default function Login() {
  <br></br>
  <br></br>
 <div className=' '>
-<h1 class="text-6xl  mb-10 font-extrabold pb-5 h-full text-transparent bg-clip-text bg-gradient-to-br  from-blue-700 to-cyan-300">
+{/* <h1 class="text-6xl  mb-10 font-extrabold pb-5 h-full text-transparent bg-clip-text bg-gradient-to-br  from-blue-700 to-cyan-300">
   Login to Begin
-</h1>
+</h1> */}
    {!status &&  <div id="toast-danger" class="mt-10 flex items-center w-full max-w-xs p-4 mb-4 text-gray-500 bg-white rounded-lg shadow " role="alert">
     <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-red-500 bg-red-100 rounded-lg ">
         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -128,16 +128,18 @@ export default function Login() {
 </div>}
   <form onSubmit={TriggerLogin}>
    
-  <input className='block  mt-10 w-full max-w-xs p-4 text-gray-900 border border-gray-300 rounded-lg bg-white sm:text-md focus:ring-blue-500 focus:border-blue-500 ' type="text" placeholder="your username" value={username} onChange={(e)=>{setUsername(e.target.value)}}></input>
-  <input className='block  mt-5 w-full max-w-xs p-4 text-gray-900 border border-gray-300 rounded-lg bg-white sm:text-md focus:ring-blue-500 focus:border-blue-500 ' type="text" placeholder="your password" value={password} onChange={(e)=>{setPassword(e.target.value)}}></input>
-  <button type="submit" className='mt-10 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow'>
+  <input className='block  mt-10 w-full max-w-xs p-4 text-white border border-gray-300 rounded-lg bg-white sm:text-md border-none focus:ring-blue-500 bg-opacity-10 focus:border-none' type="text" placeholder="your username" value={username} onChange={(e)=>{setUsername(e.target.value)}}></input>
+  <input className='block  mt-5 w-full max-w-xs p-4 text-white border border-gray-300 rounded-lg bg-white sm:text-md border-none focus:ring-blue-500 bg-opacity-10 focus:border-none ' type="text" placeholder="your password" value={password} onChange={(e)=>{setPassword(e.target.value)}}></input>
+  <button type="submit" className='mt-10 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-none rounded shadow'>
     Login
   </button>
   <br>
   </br>
-  <p className='text-white'>
-    Don't have an account?
-<a href='/register' className=' text-blue-700'>Signup here!</a></p>
+  <p className='text-white mt-8'>
+    <span className='h-10 w-1/ p-3 rounded-xl'>
+    Don't have an account? </span>
+    <span className='ml-1 h-10 w-1/ bg-white bg-opacity-10 p-3 rounded-xl'>
+<a href='/register' className='mx-4 text-blue-300'>Signup here!</a></span></p>
   </form>
 </div>
   

@@ -28,7 +28,7 @@ const data=await sendpost.json(sendpost)
 setMsg(data.message)
 setPostvalue('')
 Setlastupdated(currentdate.getMinutes())
-window.location.reload()
+
 }
 
 
@@ -51,9 +51,8 @@ const sendpost=await fetch("https://devbackend-xsjo.onrender.com/post",{
 const data=await sendpost.json(sendpost)
 setMsg(data.message)
 setPostvalue('')
-Setlastupdated(currentdate.getMinutes())
-window.location.reload()
-console.log(msg)
+// Setlastupdated(currentdate.getMinutes())
+
     }
   return (
     <>
