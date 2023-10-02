@@ -59,7 +59,8 @@ setPostvalue('')
      <div className='mx-6'>
      <div className="max-w-lg mx-auto my-10 bg-white bg-opacity-10 p-8 rounded-xl shadow shadow-slate-300">
     {!props.authstate &&  <>
-      <h1 className='text-white text-left text-2xl  font-extrabold'>Login to View</h1>
+     <a href='/login'>
+     <h1 className='text-white text-left text-2xl  font-extrabold'>Login to View</h1>
       <br></br>
       <div><div className=" h-28 w-28 bg-white  animate-pulse bg-opacity-5 rounded-full">  </div>
           <br></br>
@@ -73,6 +74,7 @@ setPostvalue('')
           
           
           <div className="mt-2  h-14 w-2/3 bg-white  animate-pulse bg-opacity-5 rounded"></div>
+     </a>
       </>
     
     }
