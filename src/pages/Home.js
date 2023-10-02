@@ -18,11 +18,9 @@ export default function Home(props) {
       // console.log(JSON.stringify(props.userdata.posts))
       
 
-    console.log(props.authstate)
+    
   }
-  else{
-    navigate("/login")
-  }
+ 
  
   
  },[])
@@ -32,11 +30,17 @@ export default function Home(props) {
      <video  autoPlay muted loop id='Solarplanet'>
      <source src={Solar} />
  </video>
+
+
+
+
+
  <br></br>
  <br></br>
    <div className='cardContainer py-9 my-9'>
-   <CardList posts={props.userdata.posts} username={props.userdata.username}/>
+   <CardList posts={props.userdata.posts} username={props.userdata.username} authstate={props.authstate}/>
    </div>
+ 
    <br>
    </br>
    <div className='bottom'>
