@@ -33,7 +33,7 @@ export default function Login() {
   if (cookie['token']){
     if ((cookie.token).length>7){
       setAuthstate(cookie.token)
-      const login=await fetch('https://devbackend-xsjo.onrender.com/verifytoken',{
+      const login=await fetch('http://localhost/verifytoken',{
         method:"POST",
         headers:{
           'Content-Type':'application/json'
@@ -62,7 +62,7 @@ export default function Login() {
   
     const TriggerLogin=async(e)=>{
       e.preventDefault();
-      const login=await fetch('https://devbackend-xsjo.onrender.com/login',{
+      const login=await fetch('http://localhost/login',{
         method:"POST",
         headers:{
           'Content-Type':'application/json'

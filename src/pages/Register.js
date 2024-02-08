@@ -28,7 +28,7 @@ export default function Register() {
     }
 const triggerRegsiter=async(e)=>{
     e.preventDefault();
-    const login=await fetch('https://devbackend-xsjo.onrender.com/register',{
+    const login=await fetch('http://localhost/register',{
         method:"POST",
         headers:{
           'Content-Type':'application/json'
