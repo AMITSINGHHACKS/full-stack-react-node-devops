@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        APP_NAME = "Devopsfront"
+        APP_NAME = "devopsfront"
         RELEASE = "1.0.0"
         DOCKER_USER = "truthaniket"
         DOCKER_PASS = 'dockerhub'
