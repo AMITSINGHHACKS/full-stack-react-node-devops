@@ -28,7 +28,7 @@ export default function Register() {
     }
 const triggerRegsiter=async(e)=>{
     e.preventDefault();
-    const login=await fetch('http://localhost:5000/register',{
+    const login=await fetch('http://172.172.232.251:5000/register',{
         method:"POST",
         headers:{
           'Content-Type':'application/json'

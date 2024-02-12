@@ -21,7 +21,7 @@ function App() {
   if (cookie['token']){
     if ((cookie.token).length>7){
       setAuthstate(cookie.token)
-      const login=await fetch('http://localhost:5000/verifytoken',{
+      const login=await fetch('http://172.172.232.251:5000/verifytoken',{
         method:"POST",
         headers:{
           'Content-Type':'application/json'
